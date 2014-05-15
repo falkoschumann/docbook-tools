@@ -1,0 +1,10 @@
+# Libraries must be installed manually and are not managed in the repository.
+lib/
+
+# Generated files
+templates/**/*.pdf
+templates/**/*.html
+
+# Mac OS X
+.DS_Store
+

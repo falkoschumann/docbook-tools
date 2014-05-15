@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<project name="docbook" default="default" basedir="../..">
+
+    <property name="docbook-xml.version" value="5.0"/>
+    <property name="docbook-xsl.version" value="1.78.1"/>
+    <property name="fop.version" value="1.1"/>
+    <property name="lib.dir" location="lib"/>
+
+    <target name="default">
+        <antcall target="download"/>
+    </target>
+
+    <target name="download">
+        <get src="http://www.docbook.org/xml/${docbook-xml.version}/docbook-${docbook-xml.version}.zip" dest="${lib.dir}"/>
+        <unzip src="${lib.dir}/docbook-${docbook-xml.version}.zip" dest="${lib.dir}"/>
+
+        <get src="http://prdownloads.sourceforge.net/docbook/docbook-xsl-${docbook-xsl.version}.zip?download" dest="${lib.dir}"/>
+        <unzip src="${lib.dir}/docbook-xsl-${docbook-xsl.version}.zip" dest="${lib.dir}"/>
+
+        <get src="http://ftp.halifax.rwth-aachen.de/apache/xmlgraphics/fop/binaries/fop-${fop.version}-bin.zip" dest="${lib.dir}"/>
+        <unzip src="${lib.dir}/fop-${fop.version}-bin.zip" dest="${lib.dir}"/>
+    </target>
+
+</project>
