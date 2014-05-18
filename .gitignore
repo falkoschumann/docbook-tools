@@ -5,6 +5,14 @@ lib/
 templates/**/*.pdf
 templates/**/*.html
 
-# Mac OS X
+# OS
 .DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+*.iml
+.project
+.classpath
+.settings/
 
