@@ -1,0 +1,75 @@
+<section xmlns="http://docbook.org/ns/docbook" version="5.0">
+    <title>Struktur von Schnittstellenbeschreibungen</title>
+    <section>
+        <title>Bezeichnung, Version</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+    </section>
+    <section>
+        <title>Resourcen (Syntax)</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+    </section>
+    <section>
+        <title>Semantik</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+        <section>
+            <title>Fachlich</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+        <section>
+            <title>Technisch</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+    </section>
+    <section>
+        <title>Protokoll</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+        <section>
+            <title>Ablauf bei Nutzung</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+        <section>
+            <title>Übertragungsweg</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+    </section>
+    <section>
+        <title>Fehlerverhalten</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+    </section>
+    <section>
+        <title>Restriktionen</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+    </section>
+    <section>
+        <title>Beispieldaten</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+    </section>
+    <section>
+        <title>Qualitätseigenschaften / QoS</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+    </section>
+</section>

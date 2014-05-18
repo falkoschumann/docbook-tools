@@ -1,0 +1,61 @@
+<section xmlns="http://docbook.org/ns/docbook" version="5.0">
+    <title>Struktur von Entwurfsentscheidungen</title>
+    <section>
+        <title>Was muss entschieden werden (Fragestellung)?</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+        <section>
+            <title>In welchen Kontext?</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+    </section>
+    <section>
+        <title>Wie wurde entschieden?</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+        <section>
+            <title>Warum?</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+        <section>
+            <title>Getroffene Annahmen</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+        <section>
+            <title>Verworfene Alternativen?</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+    </section>
+    <section>
+        <title>Konsequenzen?</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+    </section>
+    <section>
+        <title>Bekannte Risiken?</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+    </section>
+    <section>
+        <title>Wer hat wann entschieden?</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+    </section>
+</section>
