@@ -31,18 +31,226 @@
         <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
             et dolore magna aliquyam erat, sed diam voluptua.
         </para>
+        <section>
+            <title>Aufgabenstellung</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+        <section>
+            <title>Qualitätsziele</title>
+            <informaltable>
+                <tgroup cols="2">
+                    <colspec colnum="1" colwidth="3*"/>
+                    <colspec colnum="2" colwidth="7*"/>
+                    <thead>
+                        <row>
+                            <entry>Ziel</entry>
+                            <entry>Beschreibung</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>&lt;Ihr wichtigstes Qualitätsziel&gt;</entry>
+                            <entry>Konkretisierung (evtl. durch Szenarien)</entry>
+                        </row>
+                        <row>
+                            <entry>&lt;Ihr Qualitätsziel Nr. 2&gt;</entry>
+                            <entry>optionale Erläuterung oder Präzisierung</entry>
+                        </row>
+                        <row>
+                            <entry>&lt;Ihr Qualitätsziel Nr. 3&gt;</entry>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable>
+        </section>
+        <section>
+            <title>Stakeholder</title>
+            <informaltable>
+                <tgroup cols="2">
+                    <colspec colnum="1" colwidth="3*"/>
+                    <colspec colnum="2" colwidth="7*"/>
+                    <thead>
+                        <row>
+                            <entry>Rolle</entry>
+                            <entry>Ziel / Intention</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable>
+        </section>
     </section>
     <section>
         <title>Randbedingungen</title>
         <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
             et dolore magna aliquyam erat, sed diam voluptua.
         </para>
+        <section>
+            <title>Technische Randbedingungen</title>
+            <bridgehead>Hardware-Vorgaben</bridgehead>
+            <itemizedlist>
+                <listitem>
+                    <para>&lt;hier Randbedingungen einfügen&gt;</para>
+                </listitem>
+                <listitem>
+                    <para>&lt;hier Randbedingungen einfügen&gt;</para>
+                </listitem>
+            </itemizedlist>
+            <bridgehead>Software-Vorgaben</bridgehead>
+            <itemizedlist>
+                <listitem>
+                    <para>&lt;hier Randbedingungen einfügen&gt;</para>
+                </listitem>
+            </itemizedlist>
+            <bridgehead>Vorgaben des Systembetriebs</bridgehead>
+            <itemizedlist>
+                <listitem>
+                    <para>&lt;hier Randbedingungen einfügen&gt;</para>
+                </listitem>
+            </itemizedlist>
+            <bridgehead>Programmiervorgaben</bridgehead>
+            <itemizedlist>
+                <listitem>
+                    <para>&lt;hier Randbedingungen einfügen&gt;</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title>Organisatorische Randbedingungen</title>
+            <bridgehead>Organisation und Struktur</bridgehead>
+            <itemizedlist>
+                <listitem>
+                    <para>&lt;hier Randbedingungen einfügen&gt;</para>
+                </listitem>
+            </itemizedlist>
+            <bridgehead>Ressourcen (Budget, Zeit, Personal)</bridgehead>
+            <itemizedlist>
+                <listitem>
+                    <para>&lt;hier Randbedingungen einfügen&gt;</para>
+                </listitem>
+            </itemizedlist>
+            <bridgehead>Organisatorische Standards</bridgehead>
+            <itemizedlist>
+                <listitem>
+                    <para>&lt;hier Randbedingungen einfügen&gt;</para>
+                </listitem>
+            </itemizedlist>
+            <bridgehead>Juristische Faktoren</bridgehead>
+            <itemizedlist>
+                <listitem>
+                    <para>&lt;hier Randbedingungen einfügen&gt;</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title>Konventionen</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
     </section>
     <section>
         <title>Kontextabgrenzung</title>
         <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
             et dolore magna aliquyam erat, sed diam voluptua.
         </para>
+        <section>
+            <title>Fachlicher Kontext</title>
+            <informaltable>
+                <tgroup cols="3">
+                    <colspec colnum="1" colwidth="2*"/>
+                    <colspec colnum="2" colwidth="3*"/>
+                    <colspec colnum="3" colwidth="5*"/>
+                    <thead>
+                        <row>
+                            <entry>Nachbarsystem</entry>
+                            <entry>Schnittstelle / Richtung</entry>
+                            <entry>Ausgetauschte Daten / Nachrichten</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>&lt;Nachbar 1&gt;</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>&lt;Nachbar 2&gt;</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable>
+        </section>
+        <section>
+            <title>Technischer Kontext</title>
+            <informaltable>
+                <tgroup cols="4">
+                    <colspec colnum="1" colwidth="2*"/>
+                    <colspec colnum="2" colwidth="2*"/>
+                    <colspec colnum="3" colwidth="3*"/>
+                    <colspec colnum="4" colwidth="3*"/>
+                    <thead>
+                        <row>
+                            <entry>Nachbar (Knoten)</entry>
+                            <entry>Schnittstelle</entry>
+                            <entry>Technisches Protokoll</entry>
+                            <entry>Datenformat</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>&lt;Nachbar 1&gt;</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>&lt;Nachbar 2&gt;</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable>
+        </section>
+        <section>
+            <title>Externe Schnittstellen</title>
+            <informaltable>
+                <tgroup cols="3">
+                    <colspec colnum="1" colwidth="2*"/>
+                    <colspec colnum="2" colwidth="3*"/>
+                    <colspec colnum="3" colwidth="5*"/>
+                    <thead>
+                        <row>
+                            <entry>Schnittstelle</entry>
+                            <entry>Verweis auf Dokumentation</entry>
+                            <entry>Betroffene Organisation(en)</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>&lt;Name der Schnittstelle&gt;</entry>
+                            <entry>&lt;Verweis auf die ausführliche Dokumentation&gt;</entry>
+                            <entry>&lt;welche Organisation/System/Rolle ist Nutzer oder Anbieter der
+                                Schnittstelle&gt;</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable>
+        </section>
     </section>
     <section>
         <title>Lösungsstrategie</title>
@@ -55,12 +263,44 @@
         <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
             et dolore magna aliquyam erat, sed diam voluptua.
         </para>
+        <section>
+            <title>Level 1 (Bausteinsicht)</title>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="whitebox-template.xml"/>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="blackbox-template.xml"/>
+        </section>
+        <section>
+            <title>Level 2</title>
+            <section>
+                <title>&lt;Baustein 1&gt; (White Box Beschreibung)</title>
+                <para>&lt;Whitebox-Template einfügen&gt;</para>
+            </section>
+            <section>
+                <title>&lt;Baustein 2&gt; (White Box Beschreibung)</title>
+                <para>&lt;Whitebox-Template einfügen&gt;</para>
+            </section>
+            <section>
+                <title>&lt;Baustein 3&gt; (White Box Beschreibung)</title>
+                <para>&lt;Whitebox-Template einfügen&gt;</para>
+            </section>
+        </section>
     </section>
     <section>
         <title>Laufzeitsicht</title>
         <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
             et dolore magna aliquyam erat, sed diam voluptua.
         </para>
+        <section>
+            <title>Laufzeitszenario 1</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+        <section>
+            <title>Laufzeitszenario 2</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
     </section>
     <section>
         <title>Verteilungssicht</title>

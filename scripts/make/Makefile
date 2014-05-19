@@ -7,10 +7,10 @@ XSL_STYLE_FO    = ../../xsl/fo/docbook.xsl
 all: html pdf
 
 %.html: %.xml
-	xsltproc --output $@ $(XSL_STYLE_HTML) $<
+	xsltproc --xinclude --output $@ $(XSL_STYLE_HTML) $<
 
 %.fo: %.xml
-	xsltproc --output $@ $(XSL_STYLE_FO) $<
+	xsltproc --xinclude --output $@ $(XSL_STYLE_FO) $<
 
 %.pdf: %.fo
 	$(FOP_DIR)/fop -fo $< -pdf $@
