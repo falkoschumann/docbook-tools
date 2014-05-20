@@ -10,4 +10,6 @@
 
     <xsl:param name="section.autolabel" select="1"/>
 
+    <xsl:param name="toc.section.depth" select="3"/>
+
 </xsl:stylesheet>

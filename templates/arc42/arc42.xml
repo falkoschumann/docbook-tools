@@ -563,8 +563,15 @@
     </section>
     <section>
         <title>Glossar</title>
-        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua.
-        </para>
+        <glosslist>
+            <glossentry>
+                <glossterm>Foo</glossterm>
+                <glossdef>
+                    <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </para>
+                </glossdef>
+            </glossentry>
+        </glosslist>
     </section>
 </article>
