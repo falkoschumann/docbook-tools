@@ -10,6 +10,7 @@
     </target>
 
     <target name="download">
+        <mkdir dir="${lib.dir}"/>
         <get src="http://www.docbook.org/xml/${docbook-xml.version}/docbook-${docbook-xml.version}.zip" dest="${lib.dir}"/>
         <unzip src="${lib.dir}/docbook-${docbook-xml.version}.zip" dest="${lib.dir}"/>
 
