@@ -1,38 +1,33 @@
-LIB_DIR         = ../../lib
+ROOT_DIR		= ../..
+LIB_DIR         = $(ROOT_DIR)/lib
 DOCBOOK_XML_DIR = $(LIB_DIR)/docbook
 FOP_DIR         = $(LIB_DIR)/fop
-XSL_STYLE_HTML  = $(LIB_DIR)/docbook-xsl/html/docbook.xsl
-XSL_STYLE_FO    = ../../xsl/fo/docbook.xsl
+HTML_XSL  		= $(LIB_DIR)/docbook-xsl/html/docbook.xsl
+FO_XSL    		= $(ROOT_DIR)/xsl/fo/custom.xsl
+DOCBOOK			= $(ROOT_DIR)/templates/arc42/arc42.xml \
+				  $(ROOT_DIR)/templates/arc42/whitebox-template.xml \
+				  $(ROOT_DIR)/templates/arc42/blackbox-template.xml \
+				  $(ROOT_DIR)/templates/arc42/struktur_von_entwurfsentscheidungen.xml \
+				  $(ROOT_DIR)/templates/arc42/szenarien_zur_definition_von_qualitaetsanforderungen.xml \
+				  $(ROOT_DIR)/templates/arc42/struktur_technischer_konzepte.xml \
+				  $(ROOT_DIR)/templates/arc42/struktur_von_schnittstellenbeschreibungen.xml
+HTML			= $(DOCBOOK:%.xml=%.html)
+PDF				= $(DOCBOOK:%.xml=%.pdf)
 
 all: html pdf
 
+html: $(HTML)
+
+pdf: $(PDF)
+
 %.html: %.xml
-	xsltproc --xinclude --output $@ $(XSL_STYLE_HTML) $<
+	xsltproc --xinclude --output $@ $(HTML_XSL) $<
 
 %.fo: %.xml
-	xsltproc --xinclude --output $@ $(XSL_STYLE_FO) $<
+	xsltproc --xinclude --output $@ $(FO_XSL) $<
 
 %.pdf: %.fo
 	$(FOP_DIR)/fop -fo $< -pdf $@
 
-html: arc42_html v_modell_97_html
-
-pdf: arc42_pdf v_modell_97_pdf
-
-arc42_html: ../../templates/arc42/arc42.html ../../templates/arc42/whitebox-template.html ../../templates/arc42/blackbox-template.html ../../templates/arc42/struktur_von_entwurfsentscheidungen.html ../../templates/arc42/szenarien_zur_definition_von_qualitaetsanforderungen.html ../../templates/arc42/struktur_technischer_konzepte.html ../../templates/arc42/struktur_von_schnittstellenbeschreibungen.html
-
-arc42_pdf: ../../templates/arc42/arc42.pdf ../../templates/arc42/whitebox-template.pdf ../../templates/arc42/blackbox-template.pdf ../../templates/arc42/struktur_von_entwurfsentscheidungen.pdf ../../templates/arc42/szenarien_zur_definition_von_qualitaetsanforderungen.pdf ../../templates/arc42/struktur_technischer_konzepte.pdf ../../templates/arc42/struktur_von_schnittstellenbeschreibungen.pdf
-
-v_modell_97_html: ../../templates/v-modell-97/AFo.html
-
-v_modell_97_pdf: ../../templates/v-modell-97/AFo.pdf
-
-clean: arc42_clean v_modell_97_clean
-
-arc42_clean:
-	rm -f ../../templates/arc42/arc42.html ../../templates/arc42/whitebox-template.html ../../templates/arc42/blackbox-template.html ../../templates/arc42/struktur_von_entwurfsentscheidungen.html ../../templates/arc42/szenarien_zur_definition_von_qualitaetsanforderungen.html ../../templates/arc42/struktur_technischer_konzepte.html ../../templates/arc42/struktur_von_schnittstellenbeschreibungen.html
-	rm -f ../../templates/arc42/arc42.pdf ../../templates/arc42/whitebox-template.pdf ../../templates/arc42/blackbox-template.pdf ../../templates/arc42/struktur_von_entwurfsentscheidungen.pdf ../../templates/arc42/szenarien_zur_definition_von_qualitaetsanforderungen.pdf ../../templates/arc42/struktur_technischer_konzepte.pdf ../../templates/arc42/struktur_von_schnittstellenbeschreibungen.pdf
-
-v_modell_97_clean:
-	rm -f ../../templates/v-modell-97/AFo.html
-	rm -f ../../templates/v-modell-97/AFo.pdf
+clean:
+	rm -f $(HTML) $(PDF)
