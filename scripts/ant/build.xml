@@ -13,12 +13,15 @@
         <mkdir dir="${lib.dir}"/>
         <get src="http://www.docbook.org/xml/${docbook-xml.version}/docbook-${docbook-xml.version}.zip" dest="${lib.dir}"/>
         <unzip src="${lib.dir}/docbook-${docbook-xml.version}.zip" dest="${lib.dir}"/>
+        <rename src="${lib.dir}/docbook-${docbook-xml.version}" dest="${lib.dir}/docbook"/>
 
         <get src="http://prdownloads.sourceforge.net/docbook/docbook-xsl-${docbook-xsl.version}.zip?download" dest="${lib.dir}"/>
         <unzip src="${lib.dir}/docbook-xsl-${docbook-xsl.version}.zip" dest="${lib.dir}"/>
+        <rename src="${lib.dir}/docbook-xsl-${docbook-xsl.version}" dest="${lib.dir}/docbook-xsl"/>
 
         <get src="http://ftp.halifax.rwth-aachen.de/apache/xmlgraphics/fop/binaries/fop-${fop.version}-bin.zip" dest="${lib.dir}"/>
         <unzip src="${lib.dir}/fop-${fop.version}-bin.zip" dest="${lib.dir}"/>
+        <rename src="${lib.dir}/fop-${fop.version}" dest="${lib.dir}/fop"/>
     </target>
 
 </project>
