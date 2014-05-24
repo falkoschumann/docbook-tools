@@ -17,3 +17,5 @@ Thumbs.db
 .classpath
 .settings/
 
+
+xsl/fo/titlepage.xsl
