@@ -1,0 +1,48 @@
+<book xmlns="http://docbook.org/ns/docbook" version="5.0">
+    <info>
+        <title>Schnittstellenübersicht</title>
+        <subtitle>&lt;Projektname&gt;</subtitle>
+        <author>
+            <personname>
+                <firstname>Falko</firstname>
+                <surname>Schumann</surname>
+            </personname>
+        </author>
+        <copyright>
+            <year>2014</year>
+            <holder>Falko Schumann</holder>
+        </copyright>
+        <pubdate>2014-05-15</pubdate>
+        <revhistory>
+            <revision>
+                <revnumber>1.0</revnumber>
+                <date>2014-05-15</date>
+                <author>
+                    <personname>
+                        <firstname>Falko</firstname>
+                        <surname>Schumann</surname>
+                    </personname>
+                </author>
+                <revremark>Dokumenterstellung</revremark>
+            </revision>
+        </revhistory>
+    </info>
+    <chapter>
+        <title>Allgemeines</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+    </chapter>
+    <chapter>
+        <title>Systemexterne Schnittstellen</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+    </chapter>
+    <chapter>
+        <title>Systeminterne Schnittstellen</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+    </chapter>
+</book>

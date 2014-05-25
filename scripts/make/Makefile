@@ -13,7 +13,11 @@ DOCBOOK			= $(ROOT_DIR)/templates/arc42/arc42.xml \
 				  $(ROOT_DIR)/templates/arc42/szenarien_zur_definition_von_qualitaetsanforderungen.xml \
 				  $(ROOT_DIR)/templates/arc42/struktur_technischer_konzepte.xml \
 				  $(ROOT_DIR)/templates/arc42/struktur_von_schnittstellenbeschreibungen.xml \
-				  $(ROOT_DIR)/templates/v-modell-97/AFo.xml
+				  $(ROOT_DIR)/templates/v-modell-97/Projektname.xml \
+				  $(ROOT_DIR)/templates/v-modell-97/AFo.xml \
+				  $(ROOT_DIR)/templates/v-modell-97/SysArc.xml \
+				  $(ROOT_DIR)/templates/v-modell-97/TAnf.xml \
+				  $(ROOT_DIR)/templates/v-modell-97/SSUeb.xml
 HTML			= $(DOCBOOK:%.xml=%.html)
 PDF				= $(DOCBOOK:%.xml=%.pdf)
 
