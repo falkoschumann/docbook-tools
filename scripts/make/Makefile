@@ -4,7 +4,8 @@ DOCBOOK_XML_DIR = $(LIB_DIR)/docbook
 FOP_DIR         = $(LIB_DIR)/fop
 HTML_XSL  		= $(LIB_DIR)/docbook-xsl/html/docbook.xsl
 FO_XSL    		= $(ROOT_DIR)/xsl/fo/custom.xsl
-TITLEPAGE_XSL	= $(ROOT_DIR)/xsl/fo/titlepage.xsl
+TITLEPAGE_XML	= $(ROOT_DIR)/xsl/fo/titlepage.xml
+TITLEPAGE_XSL	= $(TITLEPAGE_XML:%.xml=%.xsl)
 DOCBOOK			= $(ROOT_DIR)/templates/arc42/arc42.xml \
 				  $(ROOT_DIR)/templates/arc42/whitebox-template.xml \
 				  $(ROOT_DIR)/templates/arc42/blackbox-template.xml \
@@ -30,8 +31,8 @@ pdf: $(TITLEPAGE_XSL) $(PDF)
 %.pdf: %.fo
 	$(FOP_DIR)/fop -fo $< -pdf $@
 
-$(TITLEPAGE_XSL): $(ROOT_DIR)/xsl/fo/titlepage.xml
-	xsltproc --output $(ROOT_DIR)/xsl/fo/titlepage.xsl $(ROOT_DIR)/lib/docbook-xsl/template/titlepage.xsl $(ROOT_DIR)/xsl/fo/titlepage.xml
+$(TITLEPAGE_XSL): $(TITLEPAGE_XML)
+	xsltproc --output $(TITLEPAGE_XSL) $(ROOT_DIR)/lib/docbook-xsl/template/titlepage.xsl $(TITLEPAGE_XML)
 
 clean:
 	rm -f $(HTML) $(PDF)
