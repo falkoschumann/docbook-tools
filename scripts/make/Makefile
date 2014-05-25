@@ -12,7 +12,8 @@ DOCBOOK			= $(ROOT_DIR)/templates/arc42/arc42.xml \
 				  $(ROOT_DIR)/templates/arc42/struktur_von_entwurfsentscheidungen.xml \
 				  $(ROOT_DIR)/templates/arc42/szenarien_zur_definition_von_qualitaetsanforderungen.xml \
 				  $(ROOT_DIR)/templates/arc42/struktur_technischer_konzepte.xml \
-				  $(ROOT_DIR)/templates/arc42/struktur_von_schnittstellenbeschreibungen.xml
+				  $(ROOT_DIR)/templates/arc42/struktur_von_schnittstellenbeschreibungen.xml \
+				  $(ROOT_DIR)/templates/v-modell-97/AFo.xml
 HTML			= $(DOCBOOK:%.xml=%.html)
 PDF				= $(DOCBOOK:%.xml=%.pdf)
 
