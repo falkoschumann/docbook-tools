@@ -84,7 +84,6 @@
         </t:titlepage-before>
 
         <t:titlepage-before t:side="verso">
-            <fo:block break-after="page"/>
         </t:titlepage-before>
     </t:titlepage>
 
