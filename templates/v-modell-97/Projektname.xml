@@ -6,4 +6,6 @@
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="SysArc.xml"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="TAnf.xml"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="SSUeb.xml"/>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="SSB.xml"/>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="IntPl.xml"/>
 </set>

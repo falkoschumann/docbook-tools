@@ -1,0 +1,120 @@
+<book xmlns="http://docbook.org/ns/docbook" version="5.0">
+    <info>
+        <title>Integrationsplan</title>
+        <subtitle>&lt;Projektname&gt;</subtitle>
+        <author>
+            <personname>
+                <firstname>Falko</firstname>
+                <surname>Schumann</surname>
+            </personname>
+        </author>
+        <copyright>
+            <year>2014</year>
+            <holder>Falko Schumann</holder>
+        </copyright>
+        <pubdate>2014-05-15</pubdate>
+        <revhistory>
+            <revision>
+                <revnumber>1.0</revnumber>
+                <date>2014-05-15</date>
+                <author>
+                    <personname>
+                        <firstname>Falko</firstname>
+                        <surname>Schumann</surname>
+                    </personname>
+                </author>
+                <revremark>Dokumenterstellung</revremark>
+            </revision>
+        </revhistory>
+    </info>
+    <chapter>
+        <title>Allgemeines</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+    </chapter>
+    <chapter>
+        <title>Integrationsprodukte und -strategien</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+    </chapter>
+    <chapter>
+        <title>Integrationsrandbedingungen</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+        <section>
+            <title>Integrations-/Prüfumgebung</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+        <section>
+            <title>Prioritäten</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+        <section>
+            <title>Risiken</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+        <section>
+            <title>Sonstige Randbedingungen</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+    </chapter>
+    <chapter>
+        <title>Organisation der Integration</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+        <section>
+            <title>Integrations-Netzplan</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+        <section>
+            <title>Personal</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+        <section>
+            <title>Verantwortlichkeiten</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+    </chapter>
+    <chapter>
+        <title>Integrationsmaßnahmen</title>
+        <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua.
+        </para>
+        <section>
+            <title>Erforderliche Produkte</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+        <section>
+            <title>Integrationsanleitung</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+        <section>
+            <title>Spezielle Hantierungen</title>
+            <para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua.
+            </para>
+        </section>
+    </chapter>
+</book>

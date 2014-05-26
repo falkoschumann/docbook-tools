@@ -17,7 +17,9 @@ DOCBOOK			= $(ROOT_DIR)/templates/arc42/arc42.xml \
 				  $(ROOT_DIR)/templates/v-modell-97/AFo.xml \
 				  $(ROOT_DIR)/templates/v-modell-97/SysArc.xml \
 				  $(ROOT_DIR)/templates/v-modell-97/TAnf.xml \
-				  $(ROOT_DIR)/templates/v-modell-97/SSUeb.xml
+				  $(ROOT_DIR)/templates/v-modell-97/SSUeb.xml \
+				  $(ROOT_DIR)/templates/v-modell-97/SSB.xml \
+				  $(ROOT_DIR)/templates/v-modell-97/IntPl.xml
 HTML			= $(DOCBOOK:%.xml=%.html)
 PDF				= $(DOCBOOK:%.xml=%.pdf)
 
