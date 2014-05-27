@@ -5,6 +5,8 @@ lib/
 templates/**/*.fo
 templates/**/*.pdf
 templates/**/*.html
+templates/**/*.fodt
+xsl/fo/titlepage.xsl
 
 # OS
 .DS_Store
@@ -16,6 +18,3 @@ Thumbs.db
 .project
 .classpath
 .settings/
-
-
-xsl/fo/titlepage.xsl
