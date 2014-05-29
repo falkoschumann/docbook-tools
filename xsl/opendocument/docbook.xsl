@@ -1,10 +1,50 @@
 <?xml version="1.0"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" extension-element-prefixes="db"
+                xmlns:db="http://docbook.org/ns/docbook" db:version="5.0"
+                xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0">
 
-    <xsl:output method="xml" indent="yes" encoding="UTF-8" />
+    <xsl:include href="font-face-decls.xsl"/>
 
-    <xsl:template match="/">
-        <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
+    <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
+
+    <xsl:template match="db:article|db:book">
+        <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text"
+                         xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+                         xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
+                         xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0"
+                         xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"
+                         xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         xmlns:dc="http://purl.org/dc/elements/1.1/"
+                         xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0"
+                         xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"
+                         xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"
+                         xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0"
+                         xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0"
+                         xmlns:math="http://www.w3.org/1998/Math/MathML"
+                         xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
+                         xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0"
+                         xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0"
+                         xmlns:ooo="http://openoffice.org/2004/office"
+                         xmlns:ooow="http://openoffice.org/2004/writer"
+                         xmlns:oooc="http://openoffice.org/2004/calc"
+                         xmlns:dom="http://www.w3.org/2001/xml-events"
+                         xmlns:xforms="http://www.w3.org/2002/xforms"
+                         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         xmlns:rpt="http://openoffice.org/2005/report"
+                         xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2"
+                         xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                         xmlns:grddl="http://www.w3.org/2003/g/data-view#"
+                         xmlns:officeooo="http://openoffice.org/2009/office"
+                         xmlns:tableooo="http://openoffice.org/2009/table"
+                         xmlns:drawooo="http://openoffice.org/2010/draw"
+                         xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0"
+                         xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0"
+                         xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0"
+                         xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0"
+                         xmlns:css3t="http://www.w3.org/TR/css3-text/">
+            <xsl:call-template name="insert-font-declaration"/>
             <office:body>
                 <office:text>
                     <text:sequence-decls>
@@ -13,10 +53,40 @@
                         <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
                         <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
                     </text:sequence-decls>
-                    <text:p text:style-name="Standard">Lorem ipsum.</text:p>
+                    <xsl:apply-templates select="db:info"/>
+                    <xsl:apply-templates select="db:chapter"/>
+                    <xsl:apply-templates select="db:section"/>
                 </office:text>
             </office:body>
         </office:document>
+    </xsl:template>
+
+    <xsl:template match="db:info">
+        <text:h text:outline-level="1"><xsl:value-of select="db:title"/></text:h>
+    </xsl:template>
+
+    <xsl:template match="db:section|db:chapter">
+        <text:h text:outline-level="2"><xsl:value-of select="db:title"/></text:h>
+        <xsl:apply-templates select="db:para"/>
+    </xsl:template>
+
+    <xsl:template match="db:para">
+        <text:p><xsl:value-of select="."/></text:p>
+    </xsl:template>
+
+    <xsl:template match="*" priority="-10">
+        <xsl:message>
+            <xsl:text>Element </xsl:text>
+            <xsl:value-of select="local-name(.)"/>
+            <xsl:text> in namespace '</xsl:text>
+            <xsl:value-of select="namespace-uri(.)"/>
+            <xsl:text>' encountered</xsl:text>
+            <xsl:if test="parent::*">
+                <xsl:text> in </xsl:text>
+                <xsl:value-of select="name(parent::*)"/>
+            </xsl:if>
+            <xsl:text>, but no template matches.</xsl:text>
+        </xsl:message>
     </xsl:template>
 
 </xsl:stylesheet>

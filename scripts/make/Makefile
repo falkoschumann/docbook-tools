@@ -23,14 +23,15 @@ DOCBOOK				= $(ROOT_DIR)/templates/arc42/arc42.xml \
 					  $(ROOT_DIR)/templates/v-modell-97/IntPl.xml
 HTML				= $(DOCBOOK:%.xml=%.html)
 PDF					= $(DOCBOOK:%.xml=%.pdf)
+OPENDOCUMENT		= $(DOCBOOK:%.xml=%.fodt)
 
-all: html pdf
+all: html pdf odt
 
 html: $(HTML)
 
 pdf: $(TITLEPAGE_XSL) $(PDF)
 
-odt: $(ROOT_DIR)/templates/arc42/arc42.fodt
+odt: $(OPENDOCUMENT)
 
 %.html: %.xml $(HTML_XSL)
 	xsltproc --xinclude --output $@ $(HTML_XSL) $<
@@ -48,4 +49,4 @@ $(TITLEPAGE_XSL): $(TITLEPAGE_XML)
 	xsltproc --xinclude --output $@ $(OPENDOCUMENT_XSL) $<
 
 clean:
-	rm -f $(HTML) $(PDF)
+	rm -f $(HTML) $(PDF) $(OPENDOCUMENT)
