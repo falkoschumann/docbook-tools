@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" extension-element-prefixes="db"
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
                 xmlns:db="http://docbook.org/ns/docbook" db:version="5.0"
                 xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0">
 
@@ -17,7 +17,8 @@
     <xsl:include href="font-face-decls.xsl"/>
 
     <xsl:template match="db:article|db:book">
-        <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text"
+        <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" office:version="1.2"
+                         office:mimetype="application/vnd.oasis.opendocument.text"
                          xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
                          xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
                          xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0"
@@ -69,23 +70,33 @@
     </xsl:template>
 
     <xsl:template match="db:info">
-        <text:p text:style-name="Title"><xsl:value-of select="db:title"/></text:p>
-        <text:p text:style-name="Subtitle"><xsl:value-of select="db:subtitle"/></text:p>
+        <text:p text:style-name="Title">
+            <xsl:value-of select="db:title"/>
+        </text:p>
+        <text:p text:style-name="Subtitle">
+            <xsl:value-of select="db:subtitle"/>
+        </text:p>
     </xsl:template>
 
     <xsl:template match="db:chapter">
-        <text:h text:outline-level="1"><xsl:value-of select="db:title"/></text:h>
+        <text:h text:outline-level="1">
+            <xsl:value-of select="db:title"/>
+        </text:h>
         <xsl:apply-templates/>
     </xsl:template>
 
     <xsl:template match="db:section">
         <xsl:variable name="depth" select="count(ancestor::db:section)+1"/>
-        <text:h text:outline-level="{$depth}"><xsl:value-of select="db:title"/></text:h>
+        <text:h text:outline-level="{$depth}">
+            <xsl:value-of select="db:title"/>
+        </text:h>
         <xsl:apply-templates/>
     </xsl:template>
 
     <xsl:template match="db:para">
-        <text:p><xsl:value-of select="."/></text:p>
+        <text:p>
+            <xsl:value-of select="."/>
+        </text:p>
     </xsl:template>
 
     <xsl:template match="*" priority="-10">
@@ -101,6 +112,24 @@
             </xsl:if>
             <xsl:text>, but no template matches.</xsl:text>
         </xsl:message>
+    </xsl:template>
+
+    <xsl:template match="db:bridgehead">
+        <text:p text:style-name="Heading">
+            <xsl:value-of select="."/>
+        </text:p>
+    </xsl:template>
+
+    <xsl:template match="db:itemizedlist">
+        <text:list>
+            <xsl:apply-templates/>
+        </text:list>
+    </xsl:template>
+
+    <xsl:template match="db:listitem">
+        <text:list-item>
+            <xsl:apply-templates/>
+        </text:list-item>
     </xsl:template>
 
 </xsl:stylesheet>
