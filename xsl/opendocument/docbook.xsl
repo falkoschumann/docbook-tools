@@ -53,21 +53,26 @@
                         <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
                         <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
                     </text:sequence-decls>
-                    <xsl:apply-templates select="db:info"/>
-                    <xsl:apply-templates select="db:chapter"/>
-                    <xsl:apply-templates select="db:section"/>
+                    <xsl:apply-templates/>
                 </office:text>
             </office:body>
         </office:document>
     </xsl:template>
 
     <xsl:template match="db:info">
-        <text:h text:outline-level="1"><xsl:value-of select="db:title"/></text:h>
+        <text:p text:style-name="Title"><xsl:value-of select="db:title"/></text:p>
+        <text:p text:style-name="Subtitle"><xsl:value-of select="db:subtitle"/></text:p>
     </xsl:template>
 
-    <xsl:template match="db:section|db:chapter">
-        <text:h text:outline-level="2"><xsl:value-of select="db:title"/></text:h>
-        <xsl:apply-templates select="db:para"/>
+    <xsl:template match="db:chapter">
+        <text:h text:outline-level="1"><xsl:value-of select="db:title"/></text:h>
+        <xsl:apply-templates/>
+    </xsl:template>
+
+    <xsl:template match="db:section">
+        <xsl:variable name="depth" select="count(ancestor::db:section)+1"/>
+        <text:h text:outline-level="{$depth}"><xsl:value-of select="db:title"/></text:h>
+        <xsl:apply-templates/>
     </xsl:template>
 
     <xsl:template match="db:para">
