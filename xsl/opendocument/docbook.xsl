@@ -3,9 +3,18 @@
                 xmlns:db="http://docbook.org/ns/docbook" db:version="5.0"
                 xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0">
 
-    <xsl:include href="font-face-decls.xsl"/>
+    <xsl:include href="../../lib/docbook-xsl/common/l10n.xsl"/>
+    <xsl:include href="../../lib/docbook-xsl/common/common.xsl"/>
+    <xsl:include href="../../lib/docbook-xsl/common/utility.xsl"/>
+    <xsl:include href="../../lib/docbook-xsl/common/labels.xsl"/>
+    <xsl:include href="../../lib/docbook-xsl/common/titles.xsl"/>
+    <xsl:include href="../../lib/docbook-xsl/common/subtitles.xsl"/>
+    <xsl:include href="../../lib/docbook-xsl/common/gentext.xsl"/>
+    <xsl:include href="../../lib/docbook-xsl/common/targets.xsl"/>
+    <xsl:include href="../../lib/docbook-xsl/common/olink.xsl"/>
+    <xsl:include href="../../lib/docbook-xsl/common/pi.xsl"/>
 
-    <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
+    <xsl:include href="font-face-decls.xsl"/>
 
     <xsl:template match="db:article|db:book">
         <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text"
