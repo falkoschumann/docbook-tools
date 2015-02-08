@@ -5,7 +5,7 @@
     <informalfigure>
         <mediaobject>
             <imageobject>
-                <imagedata fileref="Abbildungen/Whitebox_Bausteinname.png" format="PNG"/>
+                <imagedata fileref="Abbildungen/Whitebox_Bausteinname.png" format="PNG" scalefit="1" width="100%" contentdepth="100%"/>
             </imageobject>
             <caption>
                 <para>Abbildung Whitebox Bausteinname</para>

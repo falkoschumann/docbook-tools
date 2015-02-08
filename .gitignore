@@ -2,10 +2,10 @@
 lib/
 
 # Generated files
-templates/**/*.fo
-templates/**/*.pdf
-templates/**/*.html
-templates/**/*.fodt
+example/**/*.fo
+example/**/*.pdf
+example/**/*.html
+example/**/*.fodt
 xsl/fo/titlepage.xsl
 
 # OS

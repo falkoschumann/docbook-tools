@@ -1,29 +1,20 @@
-ROOT_DIR			= ../..
-LIB_DIR				= $(ROOT_DIR)/lib
-DOCBOOK_XML_DIR 	= $(LIB_DIR)/docbook
-FOP_DIR         	= $(LIB_DIR)/fop
-HTML_XSL  			= $(LIB_DIR)/docbook-xsl/html/docbook.xsl
-FO_XSL   	 		= $(ROOT_DIR)/xsl/fo/custom.xsl
-TITLEPAGE_XML		= $(ROOT_DIR)/xsl/fo/titlepage.xml
-TITLEPAGE_XSL		= $(TITLEPAGE_XML:%.xml=%.xsl)
-OPENDOCUMENT_XSL	= $(ROOT_DIR)/xsl/opendocument/docbook.xsl
-DOCBOOK				= $(ROOT_DIR)/templates/arc42/arc42.xml \
-					  $(ROOT_DIR)/templates/arc42/whitebox-template.xml \
-					  $(ROOT_DIR)/templates/arc42/blackbox-template.xml \
-					  $(ROOT_DIR)/templates/arc42/struktur_von_entwurfsentscheidungen.xml \
-					  $(ROOT_DIR)/templates/arc42/szenarien_zur_definition_von_qualitaetsanforderungen.xml \
-					  $(ROOT_DIR)/templates/arc42/struktur_technischer_konzepte.xml \
-					  $(ROOT_DIR)/templates/arc42/struktur_von_schnittstellenbeschreibungen.xml \
-					  $(ROOT_DIR)/templates/v-modell-97/Projektname.xml \
-					  $(ROOT_DIR)/templates/v-modell-97/AFo.xml \
-					  $(ROOT_DIR)/templates/v-modell-97/SysArc.xml \
-					  $(ROOT_DIR)/templates/v-modell-97/TAnf.xml \
-					  $(ROOT_DIR)/templates/v-modell-97/SSUeb.xml \
-					  $(ROOT_DIR)/templates/v-modell-97/SSB.xml \
-					  $(ROOT_DIR)/templates/v-modell-97/IntPl.xml
-HTML				= $(DOCBOOK:%.xml=%.html)
-PDF					= $(DOCBOOK:%.xml=%.pdf)
-OPENDOCUMENT		= $(DOCBOOK:%.xml=%.fodt)
+PROJECT_DIR         = example
+LIB_DIR             = lib
+DOCBOOK_DIR         = $(LIB_DIR)/docbook
+FOP_DIR             = $(LIB_DIR)/fop
+DOCBOOK_XSL_DIR     = $(LIB_DIR)/docbook-xsl
+CUSTOM_XSL_DIR      = xsl
+HTML_XSL            = $(DOCBOOK_XSL_DIR)/html/docbook.xsl
+FO_XSL              = $(CUSTOM_XSL_DIR)/fo/custom.xsl
+TITLEPAGE_XML       = $(CUSTOM_XSL_DIR)/fo/titlepage.xml
+TITLEPAGE_XSL       = $(TITLEPAGE_XML:%.xml=%.xsl)
+OPENDOCUMENT_XSL    = $(CUSTOM_XSL_DIR)/opendocument/docbook.xsl
+DOCBOOK             = $(PROJECT_DIR)/Projektname.xml \
+                      $(PROJECT_DIR)/Vorlage_Blackbox.xml \
+                      $(PROJECT_DIR)/Vorlage_Whitebox.xml
+HTML                = $(DOCBOOK:%.xml=%.html)
+PDF                 = $(DOCBOOK:%.xml=%.pdf)
+OPENDOCUMENT        = $(DOCBOOK:%.xml=%.fodt)
 
 all: html pdf odt
 
@@ -43,7 +34,7 @@ odt: $(OPENDOCUMENT)
 	$(FOP_DIR)/fop -fo $< -pdf $@
 
 $(TITLEPAGE_XSL): $(TITLEPAGE_XML)
-	xsltproc --output $(TITLEPAGE_XSL) $(ROOT_DIR)/lib/docbook-xsl/template/titlepage.xsl $(TITLEPAGE_XML)
+	xsltproc --output $(TITLEPAGE_XSL) $(DOCBOOK_XSL_DIR)/template/titlepage.xsl $(TITLEPAGE_XML)
 
 %.fodt: %.xml $(OPENDOCUMENT_XSL)
 	xsltproc --xinclude --output $@ $(OPENDOCUMENT_XSL) $<

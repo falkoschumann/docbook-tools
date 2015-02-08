@@ -148,7 +148,7 @@
             <informalfigure>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="Abbildungen/Fachlicher_Kontext.png" format="PNG"/>
+                        <imagedata fileref="Abbildungen/Fachlicher_Kontext.png" format="PNG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                     <caption>
                         <para>Abbildung des fachlichen Kontextes</para>
@@ -161,7 +161,7 @@
             <informalfigure>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="Abbildungen/Technischer_Kontext.png" format="PNG"/>
+                        <imagedata fileref="Abbildungen/Technischer_Kontext.png" format="PNG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                     <caption>
                         <para>Abbildung des technischen Kontextes</para>
@@ -244,7 +244,7 @@
             <informalfigure>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="Abbildungen/Laufzeitszenarioname.png" format="PNG"/>
+                        <imagedata fileref="Abbildungen/Laufzeitszenarioname.png" format="PNG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                     <caption>
                         <para>Abbildung Laufzeitszenario 1</para>
@@ -260,7 +260,7 @@
             <informalfigure>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="Abbildungen/Laufzeitszenarioname.png" format="PNG"/>
+                        <imagedata fileref="Abbildungen/Laufzeitszenarioname.png" format="PNG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                     <caption>
                         <para>Abbildung Laufzeitszenario 2</para>
@@ -276,7 +276,7 @@
             <informalfigure>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="Abbildungen/Laufzeitszenarioname.png" format="PNG"/>
+                        <imagedata fileref="Abbildungen/Laufzeitszenarioname.png" format="PNG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                     <caption>
                         <para>Abbildung Laufzeitszenario n</para>
@@ -295,7 +295,7 @@
             <informalfigure>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="Abbildungen/Infrastruktur_Ebene_1.png" format="PNG"/>
+                        <imagedata fileref="Abbildungen/Infrastruktur_Ebene_1.png" format="PNG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                     <caption>
                         <para>Abbildung Infrastruktur Ebene 1</para>
